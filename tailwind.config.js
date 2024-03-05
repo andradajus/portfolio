@@ -6,11 +6,21 @@ module.exports = {
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
   ],
+  theme: {
+    screens: {
+      'mb': '428px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1080px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    }
+  },
   prefix: "",
   daisyui: {
     styled: true,
     utils: true,
-    themes: ["light", "dark", "wireframe", "black"],
+    themes: ["black"],
   },
     extend: {
       colors: {
@@ -68,5 +78,5 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
-  plugins: [require("daisyui"),require("tailwindcss-animate"),require("@tailwindcss/typography")],
+  plugins: [require("daisyui"), require("tailwindcss-animate"), require("@tailwindcss/typography")],
 }
